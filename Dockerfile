@@ -14,5 +14,6 @@ ENV OPAMYES 1
 WORKDIR /home/opam
 USER opam
 RUN opam init
+RUN opam repository add ocsigendev https://github.com/ocsigen/opam-ocsigen.git
 RUN opam update
 RUN opam install camlp4 eliom js_of_ocaml ocsigenserver
