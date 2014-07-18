@@ -12,7 +12,6 @@ ENV HOME /home/opam
 ENV OPAMVERBOSE 1
 ENV OPAMYES 1
 WORKDIR /home/opam
-USER opam
 RUN opam init
 RUN opam repository add ocsigendev https://github.com/ocsigen/opam-ocsigen.git
 RUN opam update
